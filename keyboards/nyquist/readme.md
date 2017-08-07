@@ -6,6 +6,8 @@ The Nyquist is a 60% split ortholinear board by [Keebio](https://keeb.io). It ha
 
 ## Build Guide
 
+A build log of the Nyquist can be found here: [Nyquist Build Log](http://imgur.com/a/dD4sX).
+
 Since the design is very similar to the Let's Split v2, the build guide for that can be used while the build guide for the Nyquist is being fully developed. A build guide for putting together the Let's Split v2 can be found here: [An Overly Verbose Guide to Building a Let's Split Keyboard](https://github.com/nicinabox/lets-split-guide)
 
 There is additional information there about flashing and adding RGB underglow.
@@ -86,11 +88,11 @@ and modify the `matrix.c` accordingly.
 
 The wiring for serial:
 
-![serial wiring](imgs/split-keyboard-serial-schematic.png)
+![serial wiring](http://imgur.com/BnCGU1Y)
 
 The wiring for i2c:
 
-![i2c wiring](imgs/split-keyboard-i2c-schematic.png)
+![i2c wiring](http://imgur.com/5eiArDA)
 
 The pull-up resistors may be placed on either half. It is also possible
 to use 4 resistors and have the pull-ups in both halves, but this is
@@ -98,7 +100,7 @@ unnecessary in simple use cases.
 
 Flashing
 -------
-From the keymap directory run `make SUBPROJECT-KEYMAP-avrdude` for automatic serial port resolution and flashing.
+From the `nyquist` directory run `make SUBPROJECT-KEYMAP-avrdude` for automatic serial port resolution and flashing.
 Example: `make rev1-serial-avrdude`
 
 
