@@ -222,7 +222,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       break;
     case FUNC:
       if (record->event.pressed) {
-        persistent_default_layer_set(1UL<<_FUNC);
+        layer_on(_FUNC);
+      } else {
+        layer_off(_FUNC);
       }
       return false;
       break;
